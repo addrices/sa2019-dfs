@@ -54,43 +54,6 @@ class myfile {
 
     public Boolean ifdir(){ return is_dir;}
 
-    /*
-    public FileInputStream getFile(){
-        System.out.println("getfile " + filename);
-        String Path = "file/" + filename;
-        File f = new File(Path);
-        FileInputStream in_f = null;
-        if(f.exists()){
-            try{
-                in_f = new FileInputStream(f);
-            } catch(Exception e) {
-                e.printStackTrace();
-            }
-        }
-        return in_f;
-    }
-
-    public boolean saveFile(InputStream in_f) {
-        try {
-            String Path = "file/" + filename;
-            File f = new File(Path);
-            if (!f.exists()) {
-                f.createNewFile();
-            }
-            FileOutputStream fos = new FileOutputStream(Path);
-            byte[] b = new byte[1024];
-            int length;
-            while ((length = in_f.read(b)) > 0) {
-                fos.write(b, 0, length);
-            }
-            fos.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-            return false;
-        }
-        return true;
-    }
-*/
     public void setBlockinfo(int bnum, List<Block> bs){
         blocknum = bnum;
         blocks = bs;

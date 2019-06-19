@@ -1,10 +1,8 @@
 package namenode;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.io.FileInputStream;
-import java.io.InputStream;
 
 @Service
 class fileManager {
